@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url("font/Windlass.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color:rgb(2, 3, 129);
+    
+}
+
+    
+h1 {
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    
+}
+ .titulo {
+    color: rgba(252, 185, 0, 0.677);
+    text-align: center; 
+  }
+
+
+.aut {
+    width: 400px;
+    height: 670px;
+    margin: 10px 80px;
+    padding: 50px;
+    background-color: rgb(16, 18, 169);
+    border-radius: 40px;
+    position: relative;
+    left: 600px;
+
+    }
+.info0{
+    width: 400px;
+    height: 670px;
+    margin: 10px 80px;
+    padding: 50px;
+    background-color: rgb(16, 18, 169);
+    border-radius: 40px;
+    position: relative;
+    bottom: 777px;
+}
+.info0p{
+    color: rgba(252, 185, 0, 0.677);
+    font-size: 22px;
+}
+.auttx {
+    width: 400px;
+    height: 300px;
+
+    background-color: rgb(16, 18, 169);
+    position:absolute;
+    bottom:30px;
+    color:rgba(252, 185, 0, 0.677);
+
+    }
+.autft {
+    width: 200px;
+    height: 300px;
+
+    background-color: rgb(16, 18, 169);
+    position:absolute;
+    top:100px;
+    left:150px;
+   
+
+    
+}
+.autwiki{
+    text-decoration: none;
+    color:rgba(252, 185, 0, 0.677);
+}
+
+.autif {
+    width: 250px;
+    height: 50px;
+    padding: 3px;
+    text-align: center;
+    
+
+    background-color: rgb(16, 18, 169);
+    position:absolute;
+    left:120px;
+    top:20px;
+    
+
+    
+}
+.nav{
+    background-color:rgb(16, 18, 169) ;
+    border-radius: 100px;
+    
+}
+.nav_item{
+    display: inline-block;
+    padding: 5px 25px ;
+    border-radius: 100px;
+    
+}
+.link{
+    text-decoration: none;
+    color:rgba(252, 185, 0, 0.677);
+    font-size: 18px;
+    margin: 0;
+   
+}
+.nav_item:hover {
+    background-color: rgb(6, 8, 122);
+}
+.encuesta{
+    width: 400px;
+    height: 200px;
+    margin: 10px 80px;
+    padding: 50px;
+    background-color: rgb(16, 18, 169);
+    border-radius: 40px;
+    position: absolute;
+    top: 1000px;
+}
+.encuesta1{
+     color:rgba(252, 185, 0, 0.677);
+    font-size: 22px;
+    
+    width: 150px;
+    height: 50px;
+
+   
+    background-color: rgb(16, 18, 169);
+
+    position: absolute;
+    top: 0px;
+    left:170px;
+
+}
+
+.encuesta2{
+     color:rgba(252, 185, 0, 0.677);
+    font-size: 18px;
+    
+    width: 300px;
+    height: 50px;
+
+   
+    background-color: rgb(16, 18, 169);
+
+    position: absolute;
+    top: 50px;
+    left:50px;
+
+}
+.encuesta3{
+     color:rgba(252, 185, 0, 0.677);
+    font-size: 18px;
+    
+    width: 300px;
+    height: 50px;
+
+   
+    background-color: rgb(16, 18, 169);
+
+    position: absolute;
+    top: 150px;
+    left:50px;
+
+}
+.persos{
+   width: 400px;
+    height: 500px;
+    margin: 10px 80px;
+    padding: 50px;
+    background-color: rgb(16, 18, 169);
+    border-radius: 40px;
+    position: absolute;
+    top: 1000px;
+    left:600px; 
+}
+.persos1{
+     color:rgba(252, 185, 0, 0.677);
+    font-size: 30px;
+    
+    width: 260px;
+    height: 50px;
+
+   
+    background-color: rgb(16, 18, 169);
+
+    position: absolute;
+    top: 0px;
+    left:130px;
+
+}
+.persos2{
+     color:rgba(252, 185, 0, 0.677);
+    font-size: 22px;
+    
+    width: 400px;
+    height: 50px;
+
+   
+    background-color: rgb(16, 18, 169);
+
+    position: absolute;
+    top: 80px;
+    left:50px;
+
+}
+.persos3 {
+    width: 250px;
+    height: 200px;
+
+    background-color: rgb(16, 18, 169);
+    position:absolute;
+    top:240px;
+    left:50px;
+   
+
+    
+}
+.trailer{
+   width: 400px;
+    height: 200px;
+    margin: 10px 80px;
+    padding: 50px;
+    background-color: rgb(16, 18, 169);
+    border-radius: 40px;
+    position: absolute;
+    top: 1320px;
+   
+}
+.trailer1{
+     color:rgba(252, 185, 0, 0.677);
+    font-size: 20px;
+    
+    width: 300px;
+    height: 50px;
+
+   
+    background-color: rgb(16, 18, 169);
+
+    position: absolute;
+    top: 0px;
+    left:30px;
+
+}
+
+
+
+
+

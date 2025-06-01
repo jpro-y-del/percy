@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url("font/Windlass.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color:rgb(2, 3, 129);
+    
+}
+
+    
+h1 {
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    
+}
+ .titulo {
+    color: rgba(252, 185, 0, 0.677);
+    text-align: center; 
+  }
+.nav{
+    background-color:rgb(16, 18, 169) ;
+    border-radius: 100px;
+    
+}
+.nav_item{
+    display: inline-block;
+    padding: 5px 25px ;
+    border-radius: 100px;
+    
+}
+.link{
+    text-decoration: none;
+    color:rgba(252, 185, 0, 0.677);
+    font-size: 18px;
+    margin: 0;
+   
+}
+.nav_item:hover {
+    background-color: rgb(6, 8, 122);
+}
+#info1 {
+    width: 1060px;
+    height: 9vh;
+    margin: 20px 100px;
+    
+   background-color:rgb(16, 18, 169);
+    border-radius: 100px;
+    }
+p {
+    
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  text-align: center;
+  width:1050px;
+  font-size: 40px;
+  color:rgba(252, 185, 0, 0.677);
+
+}
+.ft {
+    width: 800px;
+    height: 500px;
+    margin: 10px 80px;
+    padding: 50px;
+    background-color: rgb(16, 18, 169);
+    border-radius: 40px;
+    position: relative;
+    left: 100px;
+
+    }
