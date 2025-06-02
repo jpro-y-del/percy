@@ -45,6 +45,8 @@ h1 {
 .info0p{
     color: rgba(252, 185, 0, 0.677);
     font-size: 22px;
+    text-align: justify;
+
 }
 .auttx {
     width: 400px;
