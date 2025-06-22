@@ -19,17 +19,7 @@ h1 {
     color: rgba(252, 185, 0, 0.677);
     text-align: center; 
   }
-.nav{
-    background-color:rgb(16, 18, 169) ;
-    border-radius: 100px;
-    
-}
-.nav_item{
-    display: inline-block;
-    padding: 5px 25px ;
-    border-radius: 100px;
-    
-}
+
 .link{
     text-decoration: none;
     color:rgba(252, 185, 0, 0.677);
@@ -37,9 +27,7 @@ h1 {
     margin: 0;
    
 }
-.nav_item:hover {
-    background-color: rgb(6, 8, 122);
-}
+
 #info1 {
     width: 1060px;
     height: 9vh;

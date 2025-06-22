@@ -44,13 +44,15 @@ h1 {
 }
 .info0p{
     color: rgba(252, 185, 0, 0.677);
-    font-size: 22px;
+    font-size: 18px;
     text-align: justify;
 
 }
 .auttx {
     width: 400px;
     height: 300px;
+    font-size: 18px;
+    text-align: justify;
 
     background-color: rgb(16, 18, 169);
     position:absolute;
@@ -180,7 +182,7 @@ h1 {
 }
 .persos1{
      color:rgba(252, 185, 0, 0.677);
-    font-size: 30px;
+    font-size: 26px;
     
     width: 260px;
     height: 50px;
@@ -195,7 +197,7 @@ h1 {
 }
 .persos2{
      color:rgba(252, 185, 0, 0.677);
-    font-size: 22px;
+    font-size: 18px;
     
     width: 400px;
     height: 50px;

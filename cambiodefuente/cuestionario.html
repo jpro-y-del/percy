@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>¿Qué personaje sos?</title>
+</head>
+<link rel="stylesheet" type="text/css" href="cuestionario.css">
+<body>
+
+  <h1>¿Qué semidios eres?</h1>
+
+  <form id="cuestionario">
+    <div class="question">
+      <p>1. ¿Qué elemento prefieres?</p>
+      <label><input type="radio" name="p1" value="percy"> Agua</label><br>
+      <label><input type="radio" name="p1" value="annabeth"> Tierra</label><br>
+      <label><input type="radio" name="p1" value="nico"> Sombra</label><br>
+      <label><input type="radio" name="p1" value="leo"> Fuego</label>
+    </div>
+
+    <div class="question">
+      <p>2. ¿Cuál es tu mayor fortaleza?</p>
+      <label><input type="radio" name="p2" value="percy"> Lealtad</label><br>
+      <label><input type="radio" name="p2" value="annabeth"> Inteligencia</label><br>
+      <label><input type="radio" name="p2" value="nico"> Misterio</label><br>
+      <label><input type="radio" name="p2" value="leo"> Creatividad</label>
+    </div>
+
+    <div class="question">
+      <p>3. ¿Qué arma usarías?</p>
+      <label><input type="radio" name="p3" value="percy"> Espada</label><br>
+      <label><input type="radio" name="p3" value="annabeth"> Daga</label><br>
+      <label><input type="radio" name="p3" value="nico"> Guadaña</label><br>
+      <label><input type="radio" name="p3" value="leo"> martillo</label>
+    </div>
+
+    <button type="button" onclick="mostrarResultado()">listo</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function mostrarResultado() {
+      const form = document.forms['cuestionario'];
+      let puntajes = {
+        percy: 0,
+        annabeth: 0,
+        nico: 0,
+        leo: 0
+      };
+
+      for (let i = 1; i <= 3; i++) {
+        const respuesta = form[`p${i}`].value;
+        if (respuesta) {
+          puntajes[respuesta]++;
+        }
+      }
+
+      let personaje = '';
+      let maxPuntos = 0;
+
+      for (let j in puntajes) {
+        if (puntajes[j] > maxPuntos) {
+          maxPuntos = puntajes[j];
+          personaje = j;
+        }
+      }
+
+      const nombres = {
+        percy: "Percy Jackson",
+        annabeth: "Annabeth Chase",
+        nico: "Nico di Angelo",
+        leo: "Leo Valdez"
+      };
+
+      if (personaje) {
+        document.getElementById('result').innerText = "¡Eres " + nombres[personaje] + "!";
+        setTimeout(function() {
+          window.location.href = "percy.html"; 
+        }, 8000); 
+    } else {
+        document.getElementById('result').innerText = "Por favor, responde alguna pregunta.";
+      }
+    }
+  </script>
+
+</body>
+</html>
