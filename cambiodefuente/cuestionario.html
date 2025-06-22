@@ -38,51 +38,65 @@
   </form>
 
   <div id="result"></div>
+  <div class="ft">
+        <img id="imagenResultado" src="" style="display:none;" width="300" height="500" >
+    </div>
+<script>
+  function mostrarResultado() {
+    const form = document.forms['cuestionario'];
+    let puntajes = {
+      percy: 0,
+      annabeth: 0,
+      nico: 0,
+      leo: 0
+    };
 
-  <script>
-    function mostrarResultado() {
-      const form = document.forms['cuestionario'];
-      let puntajes = {
-        percy: 0,
-        annabeth: 0,
-        nico: 0,
-        leo: 0
-      };
-
-      for (let i = 1; i <= 3; i++) {
-        const respuesta = form[`p${i}`].value;
-        if (respuesta) {
-          puntajes[respuesta]++;
-        }
+    for (let i = 1; i <= 3; i++) {
+      const respuesta = form[`p${i}`].value;
+      if (respuesta) {
+        puntajes[respuesta]++;
       }
+    }
 
-      let personaje = '';
-      let maxPuntos = 0;
+    let personaje = '';
+    let maxPuntos = 0;
 
-      for (let j in puntajes) {
-        if (puntajes[j] > maxPuntos) {
-          maxPuntos = puntajes[j];
-          personaje = j;
-        }
+    for (let j in puntajes) {
+      if (puntajes[j] > maxPuntos) {
+        maxPuntos = puntajes[j];
+        personaje = j;
       }
+    }
 
-      const nombres = {
-        percy: "Percy Jackson",
-        annabeth: "Annabeth Chase",
-        nico: "Nico di Angelo",
-        leo: "Leo Valdez"
-      };
+    const nombres = {
+      percy: "Percy Jackson",
+      annabeth: "Annabeth Chase",
+      nico: "Nico di Angelo",
+      leo: "Leo Valdez"
+    };
 
-      if (personaje) {
-        document.getElementById('result').innerText = "¡Eres " + nombres[personaje] + "!";
-        setTimeout(function() {
+    const imagenes = {
+      percy: "https://preview.redd.it/book-characters-are-underrated-percy-jackson-v0-o33jnheeyj1e1.jpg?width=640&crop=smart&auto=webp&s=c120edad3b9ad7c14499852b9f71e005a829e161",
+      annabeth: "https://static.wikia.nocookie.net/percyjacksonylosdiosesdelolimpo/images/c/ca/Annabeth_Chase-Viria.jpg/revision/latest?cb=20171109144736&path-prefix=es",
+      nico: "https://static.wikia.nocookie.net/percyjacksonylosdiosesdelolimpo/images/b/b8/NicodiAngelo22.jpg/revision/latest?cb=20170927134949&path-prefix=es",
+      leo: "https://static.wikia.nocookie.net/percyjacksonylosdiosesdelolimpo/images/8/8f/Leo_Valdez_by_Viria_%C2%A9.jpg/revision/latest?cb=20171022203010&path-prefix=es"
+    };
+
+    if (personaje) {
+      document.getElementById('result').innerText = "¡Eres " + nombres[personaje] + "!";
+
+      const imagen = document.getElementById('imagenResultado');
+      imagen.src = imagenes[personaje];
+      imagen.style.display = "block";
+
+    setTimeout(function() {
           window.location.href = "percy.html"; 
         }, 8000); 
     } else {
-        document.getElementById('result').innerText = "Por favor, responde alguna pregunta.";
-      }
+      document.getElementById('result').innerText = "Por favor, responde alguna pregunta.";
     }
-  </script>
+  }
+</script>
 
 </body>
 </html>
